@@ -92,7 +92,7 @@ $(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > f1 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(1) a').addClass('green');
+            // $('.cf ul li:nth-child(1) a').addClass('green');
             
 
         }
