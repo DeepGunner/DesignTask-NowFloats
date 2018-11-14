@@ -94,8 +94,8 @@ $(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > f1 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(1)').addClass('green');
-            $('.cf ul li:nth-child(1) a').addClass('white');
+            // $('.cf ul li:nth-child(1)').addClass('green');
+            // $('.cf ul li:nth-child(1) a').addClass('white');
 
         }
         if ($(window).scrollTop() > f2 - (4 * ht)) {
