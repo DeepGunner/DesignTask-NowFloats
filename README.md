@@ -1,6 +1,8 @@
 # DesignTask-NowFloats
 Design Task involving basic css and js .  
 
+Deployed At: http://deepnowfloats.herokuapp.com/
+
 to run locally download .zip or in terminal execute the following:
 
 `git clone  https://github.com/DeepGunner/DesignTask-NowFloats`
