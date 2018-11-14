@@ -63,27 +63,27 @@ function jump() {
         let str = $(this).parents().index();
         if (str == 0) {
             $('body,html').animate({
-                scrollTop: f1 + ht
+                scrollTop: f1 - ht
             });
         }
         if (str == 1) {
             $('body,html').animate({
-                scrollTop: f2 + ht
+                scrollTop: f2 - ht
             });
         }
         if (str == 2) {
             $('body,html').animate({
-                scrollTop: f3 + ht
+                scrollTop: f3 - ht
             });
         }
         if (str == 3) {
             $('body,html').animate({
-                scrollTop: f4 + ht
+                scrollTop: f4 - ht
             });
         }
         if (str == 4) {
             $('body,html').animate({
-                scrollTop: f5 + ht
+                scrollTop: f5 - ht
             });
         };
     })

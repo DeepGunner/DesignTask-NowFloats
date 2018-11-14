@@ -120,10 +120,9 @@ nav ul li a {
 }
 
 .green {
-    background: url("../img/line.svg");
-    -webkit-animation: line 1s;
-    animation: line 1s;
-    color: #fff !important;
+    
+    border-bottom: solid 3px #fff;
+    
 
 }
 
@@ -133,7 +132,7 @@ nav ul li a {
 
 .location {
     height: 200px;
-    background: seagreen;
+    
 }
 
 .contact {
