@@ -1,4 +1,4 @@
-// Initialize and add the map
+    // Initialize and add the map
 function initMap() {
 
     let myLatLng = {
@@ -15,11 +15,12 @@ function initMap() {
 
     let marker = new google.maps.Marker({
         position: myLatLng,
-        map: map,
-        title: 'Hello World!'
+        map: map
+        
     });
 }
 
+    //calculate section height from top
 
 let ht = $(".site-header").innerHeight(),
     f1 = $('.main-container .home').offset().top,
@@ -34,6 +35,8 @@ function makeSticky() {
     $('.info-container').css({
         'padding-top': ht
     });
+
+    //add remove sticky nav class based on height
     myWindow.scroll(function () {
         if (myWindow.scrollTop() == 0) {
             myHeader.removeClass("sticky-nav");
@@ -43,6 +46,7 @@ function makeSticky() {
     });
 }
 
+    //navigation highlight  on scroll
 function remove_highlight() {
     $('.cf ul li ').each(function () {
         $(this).removeClass('green');
@@ -52,33 +56,34 @@ function remove_highlight() {
     })
 }
 
+    //navigate to specific section on click
 function jump() {
     $('nav ul li a').click(function () {
         event.preventDefault();
         let str = $(this).parents().index();
         if (str == 0) {
             $('body,html').animate({
-                scrollTop: f1
+                scrollTop: f1 + ht
             });
         }
         if (str == 1) {
             $('body,html').animate({
-                scrollTop: f2
+                scrollTop: f2 + ht
             });
         }
         if (str == 2) {
             $('body,html').animate({
-                scrollTop: f3
+                scrollTop: f3 + ht
             });
         }
         if (str == 3) {
             $('body,html').animate({
-                scrollTop: f4
+                scrollTop: f4 + ht
             });
         }
         if (str == 4) {
             $('body,html').animate({
-                scrollTop: f5
+                scrollTop: f5 + ht
             });
         };
     })
@@ -122,7 +127,7 @@ $(function () {
 });
 
 
-
+    // jquery ui select menu and datepicker
 $(function () {
     $(".carSelect").selectmenu();
     $(".pickTime").selectmenu();
@@ -134,13 +139,13 @@ $(function () {
 
 
 $(function () {
-
+    //hamburger menu using tweenMax
     $("#hamburger").click(function () {
 
 
         let nav = $(".nav-wrapper");
         let navHeight = nav.height();
-
+    //hamburger div height and speed
         if (navHeight < 115) {
 
             TweenMax.to(nav, 0.3, {
