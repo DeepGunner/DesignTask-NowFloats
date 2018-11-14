@@ -522,7 +522,13 @@ footer {
 
     .cf li {
      
-        padding: 1.5em 10px;
+        padding: 1.5em 5px;
+     
+    }
+
+    .cf li a{
+     
+        font-size: 10px;
         display: table-cell;
     }
     .book input[type=submit] {
