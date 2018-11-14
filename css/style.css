@@ -371,7 +371,26 @@ nav ul li a {
 /* Media Queries */
 @media screen and (max-width: 600px) {
     
-    
+    .container .contactInfo {
+        padding: 1em;
+        width: 250px;
+        margin-bottom: 0.5em;
+    }
+
+    .container .message {
+        padding: 1em;
+        width: 250px;
+        margin-bottom: 0.5em;
+    }
+
+    .contact input[type=submit] {
+        width: 250px;
+        padding: 1em;
+        font-weight: 800;
+        background: #fff;
+    }
+
+
     .home {
         height: 220px;
     }
