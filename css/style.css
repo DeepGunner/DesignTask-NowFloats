@@ -501,6 +501,11 @@ footer {
 
 @media (max-width: 800px) {
 
+    .cf li {
+     
+        padding: 1.5em 10px;
+        display: table-cell;
+    }
     .book input[type=submit] {
         width: 40%;
     }
