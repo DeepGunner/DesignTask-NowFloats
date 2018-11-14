@@ -48,12 +48,10 @@ function makeSticky() {
 
     //navigation highlight  on scroll
 function remove_highlight() {
-    $('.cf ul li ').each(function () {
+    $('.cf ul li a').each(function () {
         $(this).removeClass('green');
     })
-    $('.cf ul li a').each(function () {
-        $(this).removeClass('white');
-    })
+    
 }
 
     //navigate to specific section on click
@@ -94,32 +92,32 @@ $(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > f1 - (4 * ht)) {
             remove_highlight();
-            // $('.cf ul li:nth-child(1)').addClass('green');
-            // $('.cf ul li:nth-child(1) a').addClass('white');
+            $('.cf ul li:nth-child(1) a').addClass('green');
+            
 
         }
         if ($(window).scrollTop() > f2 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(2)').addClass('green');
-            $('.cf ul li:nth-child(2) a').addClass('white');
+            $('.cf ul li:nth-child(2) a').addClass('green');
+            
 
         }
         if ($(window).scrollTop() > f3 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(3)').addClass('green');
-            $('.cf ul li:nth-child(3) a').addClass('white');
+            $('.cf ul li:nth-child(3) a').addClass('green');
+            
 
         }
         if ($(window).scrollTop() > f4 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(4)').addClass('green');
-            $('.cf ul li:nth-child(4) a').addClass('white');
+            $('.cf ul li:nth-child(4) a').addClass('green');
+            
 
         }
         if ($(window).scrollTop() > f5 - (5 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(5)').addClass('green');
-            $('.cf ul li:nth-child(5) a').addClass('white');
+            $('.cf ul li:nth-child(5) a').addClass('green');
+            
 
         };
     })
