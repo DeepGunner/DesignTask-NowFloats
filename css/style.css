@@ -13,6 +13,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Carousel Fade CSS */
+
 .carousel-fade .carousel-inner .item {
     transition-property: opacity;
 }
@@ -51,6 +53,7 @@ body,
     background: #818181;
 }
 
+/* Carousel Slides */
 .item:nth-child(1) {
     background: url(../img/Zephyr-Background.jpg) center no-repeat;
     background-size: cover;
@@ -69,9 +72,6 @@ body,
 .home {
     height: 95vh;
 }
-
-
-
 
 .container {
     padding: 0 30px;
@@ -131,9 +131,6 @@ nav ul li a {
     color: #fff !important;
 }
 
-
-
-
 .location {
     height: 200px;
     background: seagreen;
@@ -153,9 +150,6 @@ nav ul li a {
     align-items: center;
     text-align: center;
     flex-flow: column;
-
-
-
     background-size: cover;
 }
 
@@ -172,7 +166,7 @@ nav ul li a {
     width: 100%
 }
 
-
+/* Jquery-UI CSS changes */
 .car .ui-selectmenu-button.ui-button {
     width: 100%;
     margin-bottom: 2em;
@@ -194,7 +188,6 @@ nav ul li a {
     margin-bottom: 2em;
 }
 
-
 .timePick .labelPickUp {
     width: 20%;
     background: #fff;
@@ -214,7 +207,6 @@ nav ul li a {
     padding-left: 25px;
     padding-top: 3px;
 }
-
 
 .fa-clock {
 
@@ -252,7 +244,7 @@ nav ul li a {
     padding-top: 3px;
 }
 
-
+/* Font awesome css */
 .fa-clock {
 
     position: relative;
@@ -378,6 +370,8 @@ nav ul li a {
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
+    
+    
     .home {
         height: 220px;
     }
@@ -443,8 +437,6 @@ nav ul li a {
     }
 }
 
-
-
 .mobile-nav {
     width: 100%;
     height: 50px;
@@ -491,6 +483,8 @@ footer {
     margin-right: 30px;
 }
 
+
+/* Line animation keyframes  */
 @-webkit-keyframes line {
     0% {
         background-position-x: 390px;
@@ -532,7 +526,7 @@ footer {
     .mobile-wrapper {
         display: block;
     }
-
+    /* hamburger menu CSS */
     .hamburger-line {
         width: 40px;
         height: 7px;
@@ -542,22 +536,19 @@ footer {
         transition: all 300ms ease;
     }
 
+    /* hamburger animation */
     .rotate-down {
         margin-bottom: -12px;
 
         -ms-transform: rotate(45deg);
-        /* IE 9 */
         -webkit-transform: rotate(45deg);
-        /* Chrome, Safari, Opera */
         transform: rotate(45deg);
     }
 
     .rotate-up {
         margin-top: -12px;
         -ms-transform: rotate(-45deg);
-        /* IE 9 */
         -webkit-transform: rotate(-45deg);
-        /* Chrome, Safari, Opera */
         transform: rotate(-45deg);
     }
 
