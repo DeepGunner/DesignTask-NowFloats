@@ -121,7 +121,9 @@ nav ul li a {
 
 .textWhite {
     
-    border-bottom: solid 3px #fff;
+    background:rgba(255,255,255,0.3);
+    padding: 1em;
+    border-radius: 8px;
     color:#fff !important;
     
 

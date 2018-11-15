@@ -32,9 +32,9 @@ let ht = $(".site-header").innerHeight(),
     myWindow = $(window);
 
 function makeSticky() {
-    $('.info-container').css({
-        'padding-top': ht
-    });
+    // $('.info-container').css({
+    //     'padding-top': ht
+    // });
 
     //add remove sticky nav class based on height
     myWindow.scroll(function () {
