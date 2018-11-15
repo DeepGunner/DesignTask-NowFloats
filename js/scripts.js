@@ -49,7 +49,7 @@ function makeSticky() {
     //navigation highlight  on scroll
 function remove_highlight() {
     $('.cf ul li a').each(function () {
-        $(this).removeClass('green');
+        $(this).removeClass('textWhite');
     })
     
 }
@@ -98,25 +98,25 @@ $(function () {
         }
         if ($(window).scrollTop() > f2 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(2) a').addClass('green');
+            $('.cf ul li:nth-child(2) a').addClass('textWhite');
             
 
         }
         if ($(window).scrollTop() > f3 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(3) a').addClass('green');
+            $('.cf ul li:nth-child(3) a').addClass('textWhite');
             
 
         }
         if ($(window).scrollTop() > f4 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(4) a').addClass('green');
+            $('.cf ul li:nth-child(4) a').addClass('textWhite');
             
 
         }
         if ($(window).scrollTop() > f5 - (5 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(5) a').addClass('green');
+            $('.cf ul li:nth-child(5) a').addClass('textWhite');
             
 
         };
