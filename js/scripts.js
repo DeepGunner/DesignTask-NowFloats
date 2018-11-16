@@ -48,7 +48,7 @@ function makeSticky() {
 
     //navigation highlight  on scroll
 function remove_highlight() {
-    $('.cf ul li a').each(function () {
+    $('.menu-items li a').each(function () {
         $(this).removeClass('textWhite');
     })
     
@@ -90,33 +90,34 @@ $(function () {
     jump();
     makeSticky();
     $(window).scroll(function () {
+
         if ($(window).scrollTop() > f1 - (4 * ht)) {
             remove_highlight();
-            // $('.cf ul li:nth-child(1) a').addClass('green');
+            // $('.menu-items li:nth-child(1) a').addClass('green');
             
 
         }
         if ($(window).scrollTop() > f2 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(2) a').addClass('textWhite');
+            $('.menu-items li:nth-child(2) a').addClass('textWhite');
             
 
         }
         if ($(window).scrollTop() > f3 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(3) a').addClass('textWhite');
+            $('.menu-items li:nth-child(3) a').addClass('textWhite');
             
 
         }
         if ($(window).scrollTop() > f4 - (4 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(4) a').addClass('textWhite');
+            $('.menu-items li:nth-child(4) a').addClass('textWhite');
             
 
         }
-        if ($(window).scrollTop() > f5 - (5 * ht)) {
+        if ($(window).scrollTop() > f5 - (8 * ht)) {
             remove_highlight();
-            $('.cf ul li:nth-child(5) a').addClass('textWhite');
+            $('.menu-items li:nth-child(5) a').addClass('textWhite');
             
 
         };
