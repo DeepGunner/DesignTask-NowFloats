@@ -6,18 +6,40 @@ function initMap() {
         lng: 78.401988
     };
 
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<p>Zephyr Motors Pvt. Ltd.,<br>' +
+      'Commercial Building,<br>'+
+      'Road No. 36, Jubilee Hills,<br>'+
+      'Hyderabad - 500033</p><br>'+
+      '<p><a href="#">'+
+      'VISIT WEBSITE</a></p>'+
+      '</div>'+
+      '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
     let map = new google.maps.Map(
         document.getElementById('map'), {
-            zoom: 4,
+            zoom: 15,
             center: myLatLng
         });
 
 
     let marker = new google.maps.Marker({
         position: myLatLng,
-        map: map
+        map: map,
+        title: '',
+        icon: 'https://i.postimg.cc/W3RXb1wC/Location-Pin.png'
         
     });
+
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
 }
 
     //calculate section height from top
@@ -93,7 +115,7 @@ $(function () {
 
         if ($(window).scrollTop() > f1 - (4 * ht)) {
             remove_highlight();
-            // $('.menu-items li:nth-child(1) a').addClass('green');
+            $('.menu .menu-items li:nth-child(1) a').addClass('selected');
             
 
         }

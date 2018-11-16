@@ -79,6 +79,11 @@ body,
 
 }
 
+.selected{
+    color:#ffffff;
+    font-weight: 900;
+}
+
 .site-header {
     overflow: hidden;
     background: #000000;
@@ -109,13 +114,13 @@ nav ul li a {
 }
 
 .site-header.sticky-nav {
-    background-color: grey;
+    background-color: #000000;
     opacity: 0.8;
 
 }
 
 .sticky-nav nav ul li a {
-    color: #000000;
+    color: #fff;
     font-weight: 700;
 }
 
@@ -129,8 +134,11 @@ nav ul li a {
     padding: 1em;
     border-radius: 8px;
     color: #ffffff !important;
+}
 
 
+.heading{
+    font-weight: 800;
 }
 
 .location {
@@ -157,11 +165,11 @@ nav ul li a {
 
 .services .container {
     margin: 2em 4em;
-    padding: 0 10em;
+    padding: 0 25em;
 
 }
 
-.heading {
+.headingContainer {
     color: #ffffff;
     text-align: center;
     display: block;
@@ -195,6 +203,9 @@ nav ul li a {
     background-color: #ffffff;
     padding: 0.5em;
     margin-right: 1em;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 3em;
 }
 
 .timePick .pickUp {
@@ -231,6 +242,9 @@ nav ul li a {
     background-color: #ffffff;
     padding: 0.5em;
     margin-right: 1em;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 3em;
 }
 
 .timeDrop .dropOff {
@@ -256,7 +270,7 @@ nav ul li a {
 }
 
 .book input[type=submit] {
-    width: 20%;
+    width: 14%;
     background-color: #ffffff;
     font-weight: 800;
     padding: 0.4em;
@@ -274,11 +288,19 @@ nav ul li a {
 
 }
 
-.about .heading {
+.about .headingContainer {
     color: #000000;
     text-align: center;
     display: block;
     width: 100%;
+}
+
+.location .heading{
+    color: #ffffff
+}
+
+.contact .heading{
+    color: #ffffff
 }
 
 .about .container {
@@ -286,7 +308,7 @@ nav ul li a {
     padding: 0 10em;
 }
 
-.contact .heading {
+.contact .headingContainer {
     color: #ffffff;
     text-align: center;
     display: block;
@@ -311,7 +333,7 @@ nav ul li a {
     padding: 0 10em;
 }
 
-.location .heading {
+.location .headingContainer {
     color: #ffffff;
     text-align: center;
     display: block;
@@ -360,10 +382,28 @@ nav ul li a {
     background: #ffffff;
 }
 
+.selected{
+    color:#ffffff;
+    font-weight: 900;
+}
+
+.contact ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-style: italic;
+    
+}
+
+.contact :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-style: italic;
+}
+
+.contact ::-ms-input-placeholder { /* Microsoft Edge */
+    font-style: italic;
+}
+
 
 
 /* Media Queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
 
 
     .timeDrop .ui-selectmenu-text {
@@ -421,6 +461,10 @@ nav ul li a {
     .timePick .labelPickUp, .timeDrop .labelDropOff {
         width: 33.33%;
         font-size: 12px;
+        font-weight: 700;
+        padding: 0;
+        text-align: center;
+        padding: 8px;
     }
 
     .timePick .pickUp {
@@ -478,10 +522,19 @@ footer {
 
 .menu-items li a {
     font-size: 14px;
-    color: #777777;
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.45s;
     font-weight: 600;
+
+}
+
+.menu-items li a .selected {
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.45s;
+    font-weight: 900;
 
 }
 
@@ -519,7 +572,7 @@ footer {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
     .menu li {
 
