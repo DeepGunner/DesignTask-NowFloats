@@ -6,16 +6,13 @@ function initMap() {
         lng: 78.401988
     };
 
-    var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
+    var contentString = '<div id="mapInfo">'+
       '<p>Zephyr Motors Pvt. Ltd.,<br>' +
       'Commercial Building,<br>'+
       'Road No. 36, Jubilee Hills,<br>'+
       'Hyderabad - 500033</p><br>'+
-      '<p><a href="#">'+
+      '<p><a class="mapInfoBtn" href="#">'+
       'VISIT WEBSITE</a></p>'+
-      '</div>'+
       '</div>';
 
       var infowindow = new google.maps.InfoWindow({

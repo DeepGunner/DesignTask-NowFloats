@@ -205,7 +205,7 @@ nav ul li a {
     margin-right: 1em;
     font-weight: 700;
     text-align: left;
-    padding-left: 3em;
+    padding-left: 2em;
 }
 
 .timePick .pickUp {
@@ -244,7 +244,7 @@ nav ul li a {
     margin-right: 1em;
     font-weight: 700;
     text-align: left;
-    padding-left: 3em;
+    padding-left: 2em;
 }
 
 .timeDrop .dropOff {
@@ -400,7 +400,18 @@ nav ul li a {
     font-style: italic;
 }
 
+#map .mapInfo{
+    background-color:#000000;
+    color: #ffffff;
+    font-size: 16px;
+}
 
+.mapInfoBtn{
+    background-color: #818181;
+    padding: 1em;
+    color:#000000;
+    
+}
 
 /* Media Queries */
 @media screen and (max-width: 850px) {
