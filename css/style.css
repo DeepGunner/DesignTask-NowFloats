@@ -471,7 +471,7 @@ nav ul li a {
 
     .timePick .labelPickUp, .timeDrop .labelDropOff {
         width: 33.33%;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 700;
         padding: 0;
         text-align: center;
@@ -626,7 +626,7 @@ footer {
     /* hamburger menu CSS */
     .hamburger-line {
         width: 40px;
-        height: 5px;
+        height: 2px;
         background-color: #ffffff;
         margin: 7px;
         border-radius: 2px;
@@ -635,8 +635,7 @@ footer {
 
     /* hamburger animation */
     .rotate-down {
-        margin-bottom: -12px;
-
+        margin-bottom: -7px;
         -ms-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
